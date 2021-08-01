@@ -27,7 +27,10 @@
         "prettier/prettier": [
           "error",
           {
-            "singleQuote": true
+            "singleQuote": true,
+            "semi": true,
+            "trailingComma": "es5",
+            "endOfLine": "lf"
           }
         ],
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable

@@ -19,213 +19,85 @@ import BannerLayer9 from './keyart-layer-9.svg';
 
 // note: not the best way to organize it, but I'm out of ideas ¯\_(ツ)_/¯
 
-/*
-const parallaxBannerLayers = [
-  {
-    amount: 1.0,
-    expanded: false,
-    children: (<Image src="/static/keyart/keyart-layer-1.svg" alt="layer-img" />),
-  },
-  {
-    amount: 0.9,
-    expanded: false,
-    children: React.createElement('img', {
-      style: { ...layerStyle, objectFit: 'contain' },
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-2.svg',
-    }),
-  },
-  {
-    amount: 0.8,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-3.svg',
-    }),
-  },
-  {
-    amount: 0.6,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-4.svg',
-    }),
-  },
-  {
-    amount: 0.6,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-5.svg',
-    }),
-  },
-  {
-    amount: 0.5,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-6.svg',
-    }),
-  },
-  {
-    amount: 0.4,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-7.svg',
-    }),
-  },
-  {
-    amount: 0.3,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-8.svg',
-    }),
-  },
-  {
-    amount: 0.2,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-9.svg',
-    }),
-  },
-  {
-    amount: 0.2,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-10.svg',
-    }),
-  },
-  {
-    amount: 0.1,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-11.svg',
-    }),
-  },
-  {
-    amount: 0.1,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-12.svg',
-    }),
-  },
-  {
-    amount: 0.1,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-13.svg',
-    }),
-  },
-  {
-    amount: 0.01,
-    expanded: false,
-    children: React.createElement('img', {
-      style: layerStyle,
-      alt: 'layer-img',
-      src: '/static/keyart/keyart-layer-14.svg',
-    }),
-  },
-] as BannerLayer[];
-*/
-
 const layerStyle: CSSProperties = {
-  width: 'auto',
-  minHeight: '100%',
+  position: 'absolute',
+  display: 'block',
+  left: '50%',
+  transform: 'translate(-50%, 0)',
 };
+
+const classStyle = 'min-w-full h-full md:h-auto';
 
 const bannerLayerData = [
   {
-    amount: 0,
-    expanded: true,
-    children: (<BannerLayer1 style={layerStyle} />),
-  },
-  {
     amount: 1.0,
     expanded: true,
-    children: (<BannerLayer1 style={layerStyle} />),
+    children: <BannerLayer1 style={layerStyle} className="h-full" />,
   },
   {
     amount: 0.9,
     expanded: false,
-    children: (<BannerLayer2 style={layerStyle} />),
+    children: <BannerLayer2 style={layerStyle} className="h-full" />,
   },
   {
     amount: 0.8,
     expanded: false,
-    children: (<BannerLayer3 style={layerStyle} />),
+    children: <BannerLayer3 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.6,
     expanded: false,
-    children: (<BannerLayer4 style={layerStyle} />),
+    children: <BannerLayer4 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.6,
     expanded: false,
-    children: (<BannerLayer5 style={layerStyle} />),
+    children: <BannerLayer5 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.5,
     expanded: false,
-    children: (<BannerLayer6 style={layerStyle} />),
+    children: <BannerLayer6 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.4,
     expanded: false,
-    children: (<BannerLayer7 style={layerStyle} />),
+    children: <BannerLayer7 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.3,
     expanded: false,
-    children: (<BannerLayer8 style={layerStyle} />),
+    children: <BannerLayer8 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.2,
     expanded: false,
-    children: (<BannerLayer9 style={layerStyle} />),
+    children: <BannerLayer9 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.01,
     expanded: false,
-    children: (<BannerLayer10 style={layerStyle} />),
+    children: <BannerLayer10 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.1,
     expanded: false,
-    children: (<BannerLayer11 style={layerStyle} />),
+    children: <BannerLayer11 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.1,
     expanded: false,
-    children: (<BannerLayer12 style={layerStyle} />),
+    children: <BannerLayer12 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.1,
     expanded: false,
-    children: (<BannerLayer13 style={layerStyle} />),
+    children: <BannerLayer13 style={layerStyle} className={classStyle} />,
   },
   {
     amount: 0.01,
     expanded: false,
-    children: (<BannerLayer14 style={layerStyle} />),
+    children: <BannerLayer14 style={layerStyle} className={classStyle} />,
   },
 ] as BannerLayer[];
 
@@ -246,20 +118,16 @@ const bannerLayerData = [
 //   <BannerLayer14 />,
 // ];
 
-const bannerStyle: CSSProperties = {
-  margin: '0', top: '50%', left: '50%', transform: 'translate(-50%, 0%)',
-};
-
 // const bannerStyle: CSSProperties = {
-//   display: 'flex', justifyContent: 'center', justifySelf: 'center', alignItems: 'center',
+//   display: 'flex',
+//   width: '100%',
 // };
 
 export const ParallaxArtBackground = () => (
   <>
     <ParallaxBanner
       layers={bannerLayerData}
-      className="min-h-screen"
-      style={bannerStyle}
+      className="min-h-screen object-cover"
     />
   </>
 );
