@@ -24,6 +24,7 @@
         "sourceMap": true,
 
         "esModuleInterop": true,
+        "typeRoots": ["./src/@types", "./node_modules/@types"],
         "allowSyntheticDefaultImports": true,
         "allowJs": false,
         "skipLibCheck": true,

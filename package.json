@@ -25,6 +25,7 @@
     "devDependencies": {
         "@markusantonwolf/tailwind-css-plugin-filters": "^1.2.1",
         "@next/bundle-analyzer": "^10.2.3",
+        "@svgr/webpack": "^5.5.0",
         "@tailwindcss/jit": "^0.1.18",
         "@types/classnames": "^2.3.1",
         "@types/node": "^15.0.2",
