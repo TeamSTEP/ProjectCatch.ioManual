@@ -9,25 +9,25 @@ module.exports = withBundleAnalyzer({
     poweredByHeader: false,
     trailingSlash: true,
     basePath: baseUrl,
-    env: {
-        baseUrl: baseUrl,
+    reactStrictMode: true,
+    images: {
+      domains: ['witchone.io', 'www.witchone.io']
     },
-    webpack5: (config) => {
+
+    webpack: (config) => {
         config.module.rules.push({
             test: /\.svg$/,
-            use: [
-                {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['preact', 'env'],
-                    },
-                },
-                { loader: '@svgr/webpack' },
-            ],
+            loader: '@svgr/webpack',
+            options: {
+              prettier: false,
+              svgo: true,
+              svgoConfig: {
+                plugins:[{ removeViewBox: false }]
+              },
+              titleProp: true
+            }
         });
+
         return config;
-    },
-    future: {
-        webpack5: true,
     },
 });

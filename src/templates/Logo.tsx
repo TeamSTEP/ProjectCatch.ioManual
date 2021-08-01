@@ -36,7 +36,7 @@ const Logo = (props: ILogoProps) => {
         width={size}
         height={size}
         alt="logo"
-        src="/assets/images/logo.png"
+        src="/static/logo.png"
       />
 
       {props.showTitle && config.site_name}

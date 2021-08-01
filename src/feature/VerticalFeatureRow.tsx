@@ -1,6 +1,7 @@
 import React from 'react';
 
 import className from 'classnames';
+// import Image from 'next/image';
 
 type IVerticalFeatureRowProps = {
   title: string;
@@ -25,7 +26,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       </div>
 
       <div className="w-full sm:w-1/2 p-6">
-        <img src={`${process.env.baseUrl}${props.image}`} alt={props.imageAlt} />
+        <img src={props.image} alt={props.imageAlt} />
       </div>
     </div>
   );
