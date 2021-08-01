@@ -11,20 +11,20 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title="Druid"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/druid.svg"
+      image="/static/druid.svg"
       imageAlt="First feature alt text"
     />
     <VerticalFeatureRow
       title="Pyro"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/pyro.svg"
+      image="/static/pyro.svg"
       imageAlt="Second feature alt text"
       reverse
     />
     <VerticalFeatureRow
       title="Premium Footprints"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature3.svg"
+      image="/static/feature3.svg"
       imageAlt="Third feature alt text"
     />
   </Section>

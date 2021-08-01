@@ -24,6 +24,7 @@
         "sourceMap": true,
 
         "esModuleInterop": true,
+        "typeRoots": ["./src/@types", "./node_modules/@types"],
         "allowSyntheticDefaultImports": true,
         "allowJs": false,
         "skipLibCheck": true,
@@ -31,7 +32,11 @@
 
         "jsx": "preserve",
         "noEmit": true,
-        "isolatedModules": true
+        "isolatedModules": true,
+        "paths": {
+          "@/*": ["./*"],
+          "@/static/*": ["./public/static/*"]
+        }
     },
     "exclude": ["./dist/**/*", "./node_modules/**/*"],
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]

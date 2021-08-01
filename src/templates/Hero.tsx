@@ -1,15 +1,13 @@
 import React from 'react';
 
-import { ParallaxBanner } from 'react-scroll-parallax';
-
 import { Button } from '../button/Button';
-import KeyArtLayerConfig from '../config/backgroundArtLayer';
 import { HeroOneButton } from '../hero/HeroOneButton';
+import { ParallaxArtBackground } from '../hero/keyart';
 import { Section } from '../layout/Section';
 
 const Hero = () => (
   <div className="z-0 static">
-    <ParallaxBanner layers={KeyArtLayerConfig} className="min-h-screen" />
+    <ParallaxArtBackground />
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
         title={(
